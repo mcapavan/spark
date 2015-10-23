@@ -6,7 +6,7 @@ import org.apache.spark.api.java.function.Function;
 
 public class SimpleApp {
   public static void main(String[] args) {
-    String logFile = "README.md"; // Should be some file on your system
+    String logFile = "hdfs://sandbox.hortonworks.com:8020/user/root/README.md"; // Should be some file on your system
     SparkConf conf = new SparkConf().setAppName("Simple Application");
 //    SparkConf conf = new SparkConf().setMaster("local").setAppName("Simple Application");
     
