@@ -1,39 +1,41 @@
 Spark Interview questions from https://goo.gl/TXPiDj
 
-1. What is Apache Spark?
+1.What is Apache Spark?
 
 Spark is a fast, easy-to-use and flexible data processing framework. It has an advanced execution engine supporting cyclic data  flow and in-memory computing. Spark can run on Hadoop, standalone or in the cloud and is capable of accessing diverse data sources including HDFS, HBase, Cassandra and others.
 
-2. Explain key features of Spark.
+2.Explain key features of Spark.
 
 * Allows Integration with Hadoop and files included in HDFS.
 * Spark has an interactive language shell as it has an independent Scala (the language in which Spark is written) interpreter
 * Spark consists of RDD’s (Resilient Distributed Datasets), which can be cached across computing nodes in a cluster.
 * Spark supports multiple analytic tools that are used for interactive query analysis , real-time analysis and graph processing
 
-3. Define RDD.
+3.Define RDD.
 
 RDD is the acronym for Resilient Distribution Datasets – a fault-tolerant collection of operational elements that run parallel. The partitioned data in RDD is immutable and distributed. There are primarily two types of RDD:
 * Parallelized Collections : The existing RDD’s running parallel with one another
 * Hadoop datasets: perform function on each file record in HDFS or other storage system
 
-4. What does a Spark Engine do?
+4.What does a Spark Engine do?
 
 Spark Engine is responsible for scheduling, distributing and monitoring the data application across the cluster.
 
-5. Define Partitions?
+5.Define Partitions?
 
 As the name suggests, partition is a smaller and logical division of data  similar to ‘split’ in MapReduce. Partitioning is the process to derive logical units of data to speed up the processing process. Everything in Spark is a partitioned RDD.
 
-6. What operations RDD support?
+6.What operations RDD support?
 
 * Transformations
 * Actions
 
 7.What do you understand by Transformations in Spark?
+
 Transformations are functions applied on RDD, resulting into another RDD. It does not execute until an action occurs. map() and filer() are examples of transformations, where the former applies the function passed to it on each element of RDD and results into another RDD. The filter() creates a new RDD by selecting elements form current RDD that pass function argument.
 
-8. Define Actions.
+8.Define Actions.
+
 An action helps in bringing back the data from RDD to the local machine. An action’s execution is the result of all previously created transformations. reduce() is an action that implements the function passed again and again until one value if left. take() action takes all the values from RDD to local node.
 
 9.Define functions of SparkCore.
