@@ -11,3 +11,5 @@ To submit spark job from HDP sandbox:
 3. hadoop fs -put README.md
 4. /usr/hdp/current/spark-client/bin/spark-submit --class "com.tb.spark.SimpleApp" --master local[4] target/spark-0.0.1-SNAPSHOT.jar
 
+
+
