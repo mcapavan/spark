@@ -1,9 +1,10 @@
 Spark Interview questions from https://goo.gl/TXPiDj
 
-1.What is Apache Spark?
-Spark is a fast, easy-to-use and flexible data processing framework. It has an advanced execution engine supporting cyclic data  flow and in-memory computing. Spark can run on Hadoop, standalone or in the cloud and is capable of accessing diverse data sources including HDFS, HBase, Cassandra and others.
+1. What is Apache Spark?
 
-2.Explain key features of Spark.
+A. Spark is a fast, easy-to-use and flexible data processing framework. It has an advanced execution engine supporting cyclic data  flow and in-memory computing. Spark can run on Hadoop, standalone or in the cloud and is capable of accessing diverse data sources including HDFS, HBase, Cassandra and others.
+
+2. Explain key features of Spark.
 • Allows Integration with Hadoop and files included in HDFS.
 • Spark has an interactive language shell as it has an independent Scala (the language in which Spark is written) interpreter
 • Spark consists of RDD’s (Resilient Distributed Datasets), which can be cached across computing nodes in a cluster.
